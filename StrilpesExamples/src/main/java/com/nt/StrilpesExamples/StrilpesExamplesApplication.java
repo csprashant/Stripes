@@ -94,21 +94,21 @@ public class StrilpesExamplesApplication {
 		System.out.print(gson1.toJson(existingCustomer));
 		
 		------------------------------------------*/
-		/*--------------------------------------------------------------------
+		//--------------------------------------------------------------------
 				// retriving a card
 		
 				Map<String, Object> retrieveParams = new HashMap<>();
 				List<String> expandList = new ArrayList<>();
 				expandList.add("sources");
 				retrieveParams.put("expand", expandList);
-				Customer customer = Customer.retrieve("cus_KJYtC2BqnPV19q", retrieveParams, null);
+				Customer customer = Customer.retrieve("cus_KJvA8ywuHLwz0c", retrieveParams, null);
 		
-				Card card = (Card) customer.getSources().retrieve("card_1Jf2QWSBMy5RKIBwSSka0UQl");
+				Card card = (Card) customer.getSources().retrieve("card_1JfHiiSBMy5RKIBwC7U9tTGQ");
 				System.out.println("--->"+card.getLast4());
 				System.out.println("---->"+card.getExpMonth());
 				System.out.println("---->"+card.getExpYear());
 				System.out.println("---->"+card.toString());
-		---------------------------------------------------------------------*/
+		//---------------------------------------------------------------------*/
 		/*---------------------------------------------------------------------
 		// updatig a card
 		
