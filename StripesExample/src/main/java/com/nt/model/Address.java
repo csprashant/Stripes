@@ -6,10 +6,12 @@ public class Address {
 	private  String line2;
 	private  String state;
 	private  String country;
+	
 	public String getCity() {
 		return city;
 	}
 	public void setCity(String city) {
+		System.out.println();
 		this.city = city;
 	}
 	public String getLine1() {
